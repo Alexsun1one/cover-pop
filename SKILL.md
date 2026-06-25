@@ -21,6 +21,7 @@ A cover is not decoration and not a poster. It is a one-second pitch. If the cov
 8. Build the final image prompt with `references/prompt-template.md`.
 9. Generate one cover at a time with native title typography baked into the image pixels. Do not make a blank background for later local text unless the user explicitly asks for editable/post-production text.
 10. Run QA with `references/qa-checklist.md`; regenerate if the native title is unreadable, the hook is empty, the look is tacky, or it is cluttered.
+11. For portfolio/showcase covers, demonstrate real content niches, not only "this skill/tool is free" meta covers. Good showcase topics include books, food, learning, personal essays, places, products, and cultural guides.
 
 ## Stop Test
 

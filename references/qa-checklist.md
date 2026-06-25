@@ -19,6 +19,7 @@ UNVERIFIED — regenerate or inspect, do not accept.
 - The palette is restrained: one base, one accent, one ink.
 - The composition has breathing room; the title is not crammed edge to edge.
 - The aspect ratio matches the platform (小红书 3:4 by default).
+- If this is a README/gallery/showcase image, it looks like a real publishable cover for a real niche, not only a meta-ad for the tool.
 - **Real-account test (name one, decide save-or-scroll):** name ONE specific real account in this
   exact niche (a real handle/博主名, e.g. a real 小红书/公众号 account you can point to — not "a
   typical 知识博主"). Imagine this cover sitting in that account's grid between two of their real
