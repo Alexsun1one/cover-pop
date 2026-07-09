@@ -6,6 +6,32 @@ For the image group below, every PASS must be justified by something visible in 
 file, not by what you intended. If your only evidence is the prompt you wrote, the item is
 UNVERIFIED — regenerate or inspect, do not accept.
 
+### Asset routing & ownership (plan + render)
+
+- An **asset role** was chosen (xhs note cover / wechat OA header / douyin-video thumb / moments share / search-result thumb / center image for a card) per `asset-routing-and-truth.md`.
+- This is still a **cover** job — if it should be quote-cards / sticker-set / paper-operators / busy-town / lego-town / a logo, **reroute** instead of accepting.
+- **Text ownership** matches the role: title in-image by default; center-well images do not stuff a full headline the outer layout will duplicate.
+- **Exact title truth**: every on-cover character matches the locked/accepted title; no invented numbers, rankings, prices, or claims (`text-strategy.md`).
+
+### Layout / ratio
+
+- **Platform ratio** matches the ask (default 小红书 **3:4**; OA / video / Moments per `layout-handoff.md`) — do not stretch later.
+- Title and focal subject sit in the **central ~70%**; critical glyphs are not flush to edges that feed/search crops will cut.
+- Any caption / body / hashtags / CTA stay **outside** the image.
+
+### Failure pattern scan
+
+Before accept, name-check `failure-patterns.md`. Fail (regenerate or reroute) if any is present:
+
+- clickbait empty promise
+- 微商风
+- AI plastic / melted glyphs
+- unreadable thumb title
+- clutter / stacked archetypes
+- wrong platform ratio
+- wrong owner
+- truth drift on title or claims
+
 ### Check the RENDERED IMAGE (look at the file)
 
 - **Squint test (must view, not recall):** produce an actual 200px-wide downscaled copy of the
@@ -38,7 +64,8 @@ UNVERIFIED — regenerate or inspect, do not accept.
 ## Regenerate
 
 - The title is unreadable at thumbnail size, mangled, or cut off.
-- The characters are wrong, doubled, or partly gibberish.
+- The characters are wrong, doubled, or partly gibberish — or diverge from the locked exact title.
+- On-cover numbers/claims were invented or altered (truth drift).
 - The promise is empty clickbait with nothing behind it.
 - It reads as 微商: gold-red glow, sticker pile, fake urgency badge, QR cram.
 - It reads as 土味: WordArt, bevel, neon-on-neon, double drop shadow.
@@ -46,6 +73,8 @@ UNVERIFIED — regenerate or inspect, do not accept.
 - It shows AI plastic: extra fingers, waxy skin, melted text, hallucinated logos.
 - It is a cluttered collage with no focal point.
 - Two or three archetypes are stacked onto one cover.
+- The platform ratio is wrong for the asset role.
+- The job belongs to another skill (wrong owner) — reroute instead of polishing.
 - It is pretty but says nothing.
 
 ## Repair Moves

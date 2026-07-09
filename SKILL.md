@@ -9,19 +9,39 @@ Cover Pop turns a topic into a social cover image whose single job is to make th
 
 A cover is not decoration and not a poster. It is a one-second pitch. If the cover does not earn the tap, nothing else in the note matters. Use this skill to plan and generate covers with a strong readable title, a clear visual hook, one promise, and a clean look that does not read as 微商 spam, 土味 poster, or AI plastic.
 
+## Skill Boundaries — Neighbors
+
+Before anything else, confirm this is the right skill. The fastest failure is using a cover skill for a non-cover job.
+
+| The source is about… | Use | Why |
+| --- | --- | --- |
+| stop-and-tap social cover / 小红书封面 / 公众号头图 / 视频封面 / 笔记首图 | **cover-pop** | one promise + native title + platform ratio |
+| one quote / 金句 / number save-card for keeping | **quote-cards** | save-card grammar, not feed-tap cover |
+| sticker / emoji / expression pack | **sticker-set** | not a cover |
+| article body figure / one conceptual action | **paper-operators** | explainer, not thumb-stop cover |
+| who hands off to whom / process town | **busy-town** | cooperation figure, not cover |
+| parts snap together / modules / anatomy | **lego-town** | structural assembly, not cover |
+| logo / brand mark / icon system | **refuse** | covers are not logos |
+
+Borderline: if another system owns the headline and only needs a center image well, route as "center image for a card" in `asset-routing-and-truth.md` — or hand off to the card/layout owner.
+
 ## Workflow
 
 1. Read the topic, title idea, note draft, product, or screenshot.
-2. Identify the target reader and the one moment they are scrolling in.
-3. Write the core promise: what the reader gets if they tap.
-4. Choose a cover archetype from `references/cover-archetypes.md`.
-5. Run the Stop Test: would this reader stop, and is the promise real?
-6. Write the title line(s) using `references/title-formulas.md` — short, concrete, readable at thumbnail size.
-7. Route the aesthetic register by niche/mood/subject with `references/style-routing.md` (知识/干货 → 瑞士网格, 国风/国学 → 水墨, 产品 → 工作室静物, 情绪 → Hopper+留白) — the subject picks the look automatically — then apply `references/style-dna.md` inside it.
-8. Build the final image prompt with `references/prompt-template.md`.
-9. Generate one cover at a time with native title typography baked into the image pixels. Do not make a blank background for later local text unless the user explicitly asks for editable/post-production text.
-10. Run QA with `references/qa-checklist.md`; regenerate if the native title is unreadable, the hook is empty, the look is tacky, or it is cluttered.
-11. For portfolio/showcase covers, demonstrate real content niches, not only "this skill/tool is free" meta covers. Good showcase topics include books, food, learning, personal essays, places, products, and cultural guides.
+2. **Route the asset** with `references/asset-routing-and-truth.md`: pick role (xhs note cover / wechat OA header / douyin-video thumb / moments share / search-result thumb / center image for a card), platform, ratio, text ownership, truth constraints, and whether another skill should own the job.
+3. **Lock text strategy & truth** with `references/text-strategy.md`: main ≤15 字, sub ≤10, native in-image title by default, exact-text block for locked title/numbers/claims. Do not invent stats or alter accepted title characters.
+4. Identify the target reader and the one moment they are scrolling in.
+5. Write the core promise: what the reader gets if they tap.
+6. Choose a cover archetype from `references/cover-archetypes.md`.
+7. Run the Stop Test: would this reader stop, and is the promise real?
+8. Write the title line(s) using `references/title-formulas.md` — short, concrete, readable at thumbnail size — then re-check budget/exactness in `text-strategy.md`.
+9. Plan **layout handoff** with `references/layout-handoff.md`: platform ratio (default 小红书 3:4), safe margins for crop/thumbnail, caption outside if any.
+10. Route the aesthetic register by niche/mood/subject with `references/style-routing.md` (知识/干货 → 瑞士网格, 国风/国学 → 水墨, 产品 → 工作室静物, 情绪 → Hopper+留白) — the subject picks the look automatically — then apply `references/style-dna.md` inside it.
+11. Build the final image prompt with `references/prompt-template.md`, including the exact-text block.
+12. Generate one cover at a time with native title typography baked into the image pixels. Do not make a blank background for later local text unless the user explicitly asks for editable/post-production text.
+13. For public/showcase/reusable covers, record the minimal prompt trail with `references/prompt-records.md`.
+14. Run QA with `references/qa-checklist.md`; include asset-routing / exact-title truth / layout-ratio checks and the failure scan from `references/failure-patterns.md`. Regenerate if the native title is unreadable, the hook is empty, the look is tacky, ratio is wrong, or it is cluttered.
+15. For portfolio/showcase covers, demonstrate real content niches, not only "this skill/tool is free" meta covers. Good showcase topics include books, food, learning, personal essays, places, products, and cultural guides.
 
 ## Stop Test
 
@@ -106,30 +126,44 @@ buries it. Covers forbid clutter — never route a clean cover to a maximalist r
 For planning, return:
 
 ```text
+asset role:
+platform + ratio:
+text ownership: native in-image (default) / post-overlay (user-requested) / center-well no title
+truth constraints: exact title / exact numbers or claims / none
 target reader:
 core promise:
 scroll moment:
 archetype:
 hook:
-title line(s):
+title line(s) exact:
 why not scrolled past:
+layout handoff: safe margin · caption outside · crop guidance
 layout & palette:
 final image prompt:
-QA risks:
+prompt record (for public/reusable covers):
+QA risks: asset routing · exact title truth · layout/ratio · failure patterns (clickbait / 微商风 / AI plastic / unreadable thumb / clutter / wrong ratio / wrong owner):
 native text plan:
 ```
 
 For generation, produce one cover at a time and report:
 
 - image path
+- asset role
 - platform & aspect ratio
 - the exact title text rendered
 - native text status: confirm the image itself contains the title; if external overlay was used, state the user's explicit request
+- layout handoff notes (caption outside, crop warnings, thumb-safe?)
 - one-line purpose
-- whether it passes QA or needs regeneration
+- prompt record path or inline minimal record when public/reusable
+- QA verdict: failure modes watched, exact title truth, ratio, ship / regenerate / reroute
 
 ## References
 
+- `references/asset-routing-and-truth.md`: decide cover asset role, platform, text ownership, truth constraints, and when another skill should own the job.
+- `references/text-strategy.md`: title budget, native-text default, exact-text block, and Chinese repair policy.
+- `references/layout-handoff.md`: platform ratios, safe margins, crop guidance, caption outside.
+- `references/failure-patterns.md`: name and repair clickbait, 微商风, AI plastic, unreadable thumbs, clutter, wrong ratio, wrong owner.
+- `references/prompt-records.md`: minimal audit trail for public/reusable covers.
 - `references/style-routing.md`: route the aesthetic register by niche/mood/subject (国风 → ink, knowledge → Swiss…) — read this with style-dna.
 - `references/style-dna.md`: the visual identity and anti-tacky rules.
 - `references/cover-archetypes.md`: cover types, when to use each, layout and title pattern.
